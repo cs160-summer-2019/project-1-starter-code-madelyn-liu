@@ -2,14 +2,107 @@
 
 <!DOCTYPE html>
 <html>
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <head>
-	<title>Comparison - Alert!</title>
-	
-	<link rel="stylesheet" type="text/css" href="{% static 'weather/vendors/bootstrap/css/bootstrap.css' %}" />
-	<link rel="stylesheet" type="text/css" href="{% static 'weather/css/style.css' %}" />
+  <title>Comparison - Alert!</title>
+
+  <link rel="stylesheet" type="text/css" href="{% static 'weather/vendors/bootstrap/css/bootstrap.css' %}" />
+  <link rel="stylesheet" type="text/css" href="{% static 'weather/css/style.css' %}" />
 
 </head>
+
 <body>
-	<!-- your comparison interface with alert here -->
+  <body class="text-center" style="padding: 20PX;">
+    <div class="container">
+      <h3>Paradise Planner</h3>
+    </div>
+
+
+    <div class="container">
+
+      <div class "row">
+        <div class="col-xs-4">
+          <button type="button" class="btn btn-primary" style="align:left"> <img src = "https://static.thenounproject.com/png/72961-200.png" style = "height: 20px"> </button>
+        </div>
+        <div class="col-xs-4">
+          <h1> Your Cities </h1>
+         
+          <label for="time">Time: </label>
+          <input type="time" id="time" name="time" min="00:00" max="24:00">
+          <br>
+
+        </div>
+        <div class="col-xs-4">
+          <button type="button" class="btn btn-primary" style="align:right"> <img src = "https://cdn3.iconfinder.com/data/icons/vector-icons-for-mobile-apps-2/512/Settings_black-512.png" style = "height: 20px"> </button>
+        </div>
+      </div>
+    </div>
+    <hr>
+
+    <div class="container">
+
+      <div class="d-flex flex-row justify-content-center">
+        <div class="col-xs-4">
+          <h2> Berkeley</h2>
+          <h4> 9:55 PM </h4>
+          <hr>
+          <h2> Oakland</h2>
+          <h4> 9:55 PM </h4>
+          <hr>
+          <h2> Emeryville</h2>
+          <h4> 9:55 PM </h4>
+          <hr>
+          <h2> Budapest</h2>
+          <h4> 6:55 AM </h4>
+          <hr>
+          <h2> Shanghai</h2>
+          <h4> 12:55 PM </h4>
+          <hr>
+          <h2>Albany</h2>
+          <h4> 12:55 AM </h4>
+          <hr>
+
+        </div>
+        <div class="col-xs-4">
+          <img src = "https://cdn2.iconfinder.com/data/icons/weather-flat-14/64/weather10-512.png" style = "height: 47px">
+          <hr>
+          <img src = "https://cdn2.iconfinder.com/data/icons/weather-flat-14/64/weather10-512.png" style = "height: 47px">
+          <hr>
+          <img src = "https://cdn2.iconfinder.com/data/icons/weather-flat-14/64/weather10-512.png" style = "height: 47px">
+          <hr>
+          <img src = "https://cdn2.iconfinder.com/data/icons/weather-flat-14/64/weather01-512.png" style = "height: 47px">
+          <hr>
+          <img src = "https://cdn2.iconfinder.com/data/icons/weather-flat-14/64/weather02-512.png" style = "height: 47px">
+          <hr>
+          <img src = "https://cdn2.iconfinder.com/data/icons/weather-flat-14/64/weather08-512.png" style = "height: 47px">
+          <hr>
+          
+          
+        </div>
+        <div class="col-xs-4">
+          <h2> 61&#176; F</h2>
+          <h4> fair weather </h4>
+          <hr>
+          <h2> 63&#176; F</h2>
+          <h4> fair weather </h4>
+          <hr>
+          <h2> 58&#176; F</h2>
+          <h4> fair weather </h4>
+          <hr>
+          <h2> 78&#176; F</h2>
+          <h4> fair weather </h4>
+          <hr>
+          <h2> 87&#176; F</h2>
+          <h4> fair weather </h4>
+          <hr>
+          <h2> 77&#176; F</h2>
+          <h4 style="color:red"> thunderstorm! </h4>
+          <hr>
+        </div>
+      </div>
+    </div>
 </body>
+
 </html>
